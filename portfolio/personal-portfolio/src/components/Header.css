@@ -1,0 +1,48 @@
+/* src/components/Header.css */
+
+.header {
+    background-color: #282c34; /* Dark background color for the header */
+    color: white; /* White text color for contrast */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center; /* Vertically center the content */
+    padding: 20px 50px; /* Padding for some space around content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .logo {
+    font-size: 24px; /* Larger font size for the logo */
+    font-weight: bold; /* Bold font for the logo */
+  }
+  
+  .nav {
+    display: flex; /* Flexbox for horizontal navigation */
+    gap: 20px; /* Space between nav links */
+  }
+  
+  .nav-link {
+    color: white; /* White color for nav links */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Font size for nav links */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .nav-link:hover {
+    color: #61dafb; /* Light blue color on hover */
+  }
+  
+  /* Responsive Design: Adjust layout for smaller screens */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column; /* Stack the logo and nav vertically */
+      align-items: flex-start; /* Align items to the left */
+      padding: 20px; /* Adjust padding */
+    }
+  
+    .nav {
+      flex-direction: column; /* Stack nav links vertically */
+      gap: 10px; /* Space between nav links */
+      width: 100%; /* Full width for nav */
+    }
+  }
+  
